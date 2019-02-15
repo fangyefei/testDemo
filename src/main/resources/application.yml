@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+  #开发配置
+spring:
+    #数据源配置
+  datasource:
+      url: jdbc:oracle:thin:@132.225.150.61:9999:resdb1
+      username: res_check
+      password: res_check
+      driverClassName: oracle.jdbc.driver.OracleDriver
+      type:
+  #公共配置与profiles选择无关
+mybatis:
+    typeAliasesPackage: com.example.demo.entity
+    mapperLocations: classpath:mapper/*.xml
+
+
+logging:
+  level:
+    com.example.demo.dao : debug
