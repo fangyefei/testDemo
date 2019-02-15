@@ -24,6 +24,7 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
     @RequestMapping(value = "/listUser/byId",method = RequestMethod.GET)
     public List<User> listUserById(Integer age){
         logger.info("age is: " + age);
