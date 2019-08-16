@@ -1,0 +1,224 @@
+.table-responsive {
+    overflow: hidden;
+}
+
+.dataTables_filter {
+    text-align: center;
+    width: 100%;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+    border-bottom-width: 0;
+}
+
+.login-page {
+    /*background: #DE3A3B;*/
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../img/change/background.jpg) no-repeat;
+    background-size: cover;
+}
+
+.login-header {
+    height: 70px;
+    line-height: 70px;
+    background-color: #ffffff;
+}
+
+.login-logo-nav {
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.login-section {
+    /*background: #DE3A3B;*/
+    margin-top: 5%;
+}
+
+.login-logo {
+    width: 88px;
+    height: 48px;
+    margin: -10px 20px 0 70px;
+    padding-right: 10px;
+    vertical-align: middle;
+    background: url(../img/unicom-logo-text.png) no-repeat;
+    display: inline-block;
+}
+
+.login-bg {
+    margin-top: 20px;
+    background: url("../img/login-bg.png") no-repeat top;
+    width: 100%;
+}
+
+.login-box {
+    margin-top: 20px;
+}
+
+.login-box-body {
+    width: 400px;
+    /*margin: 40px 60px 0 110px;*/
+    background: #fff;
+    padding: 20px;
+    border-top: 0;
+    color: #666;
+    border-radius: 4px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+}
+
+.fixed-table-body {
+    min-height: 160px;
+}
+
+.bootstrap-autocomplete {
+    height: 200px;
+    overflow: auto;
+}
+
+.sidebar {
+    width: 230px;
+    background-color: #222d32;
+}
+
+@media (min-width: 1200px) {
+    .content:not(.content--boxed):not(.content--full) {
+        padding: 50px 10px 0 240px;
+    }
+}
+
+@media (max-width: 575px) {
+    .content:not(.content--boxed):not(.content--full) {
+        padding: 50px 15px 0;
+    }
+}
+
+.header {
+    padding: 0;
+}
+
+.header__logo {
+    width: 230px;
+    min-width: 230px;
+    text-align: center;
+    background-color: #ED1B23;
+}
+
+.header__logo .logo {
+    height: 52px;
+}
+
+.header-name {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.user-box {
+    margin: 0 0 0 auto;
+}
+
+.user {
+    margin: 0;
+    background: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.top-nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user__name {
+    color: #fff;
+}
+
+.navigation-menu {
+    color: #b8c7ce;
+}
+
+.scrollbar-inner {
+    /*background-color: #262A36;*/
+}
+
+.scrollbar-inner span {
+    /*color: #ffffff;*/
+}
+
+.bg-red {
+    background-color: #ED1B23 !important;
+}
+
+[data-ma-theme="red"] .header,
+[data-ma-theme="red"] .login__block__header,
+[data-ma-theme="red"] .login__block__btn {
+    background-color: #ED1B23;
+}
+
+[data-ma-theme="red"] .navigation__sub--active > a,
+[data-ma-theme="red"] .navigation__active > a,
+[data-ma-theme="red"] .navigation__active:before {
+    color: #ED1B23;
+}
+
+[data-ma-theme="red"] .top-menu > li.active {
+    box-shadow: inset 0 -2px 0 #ED1B23;
+}
+
+.modal-header {
+    display: inline-block;
+    padding: 15px;
+    /*border-bottom: 1px solid #e5e5e5;*/
+    border-radius: 0;
+}
+
+.modal-header .close {
+    color: #fff;
+}
+
+.modal-footer {
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    /*border-top: 1px solid #e5e5e5;*/
+    border-radius: 0;
+}
+
+.input-group-addon {
+    /*border-bottom: 0;*/
+}
+
+.form-control {
+    /*border: 1px solid #f1f1f1;*/
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.nav-tabs-custom > .nav-tabs > li.active {
+    border-top-color: #3c8dbc;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}

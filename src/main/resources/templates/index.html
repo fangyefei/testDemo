@@ -1,21 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <title>Bootstrap 实例</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 新 Bootstrap4 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
-    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
-    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="edge"/>
+    <title>江苏联通商务楼宇管理系统</title>
+    <link rel="shortcut icon" type="image/png" th:href="@{/img/favicon.ico}"/>
+    <!-- AdminLTE styles -->
+    <link rel="stylesheet" data-th-href="@{js/plugins/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" data-th-href="@{js/plugins/adminlte/css/AdminLTE.min.css}">
+    <link rel="stylesheet" data-th-href="@{js/plugins/adminlte/css/skins/_all-skins.min.css}">
+    <link rel="stylesheet" th:href="@{css/plugins/iCheck/minimal/green.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{css/app.css}" type="text/css">
+    <link rel="stylesheet" data-th-href="@{css/common.css}">
+    <link rel="stylesheet" th:href="@{css/app/login.css}" type="text/css">
+    <!-- Glyphicons -->
+    <link rel="stylesheet" data-th-href="@{css/plugins/glyphicons.css}">
+    <link rel="stylesheet" data-th-href="@{css/reset.css}">
+    <!-- animate -->
+    <link rel="stylesheet" th:href="@{css/plugins/animate/animate.min.css}" type="text/css">
+    <script th:src="@{js/plugins/jquery.min.js}"></script>
+    <script th:src="@{js/plugins/iCheck/icheck.js}"></script>
+    <script th:src="@{js/plugins/bootstrap-notify/bootstrap-notify.min.js}"></script>
+    <script th:src="@{js/common.js}"></script>
 </head>
-<body>
+<style>
 
-
+</style>
+<body class="hold-transition login-page">
+<header class="login-header">
+    <div class="login-logo-nav">
+        <a href="index" class="login-logo"></a>江苏联通商务楼宇管理系统
+    </div>
+</header>
+<section class="login-section">
+    <div class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6 login-box">
+            <div class="login-box-body">
+                <div class="login-form">
+                    <div class="form-header">
+                        <h4>欢迎登录</h4>
+                    </div>
+                    <div class="form-content">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" id='username' placeholder="用户名"
+                                       autofocus>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input type="password" class="form-control" id='password'
+                                       placeholder="密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p>
+                                <input type="checkbox" id="rememberMe"/>
+                                <span>记住我</span>
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-danger btn-block" id="loginButton">
+                                登录
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<div data-th-include="common/footer"></div>-->
 </body>
+<script th:inline="javascript">
+    var ctx = [[@{/}]];
+</script>
+<script data-th-src="@{js/app/index.js}"></script>
 </html>
